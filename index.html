@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rudra Narayan Swain – Full Stack Developer | MERN Stack | Python | React – Portfolio showcasing projects, skills, and experience." />
+  <meta name="keywords" content="Rudra Narayan Swain, Full Stack Developer, MERN Stack, React, Node.js, portfolio" />
+  <meta name="author" content="Rudra Narayan Swain" />
+  <title>Rudra Narayan Swain | Full Stack Developer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo">RN<span>S</span></a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero section" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <p class="hero-greeting">👋 Hello, World! I'm</p>
+          <h1 class="hero-title text-gradient">Rudra Narayan<br/>Swain</h1>
+          <div class="hero-subtitle text-accent-gradient" id="typed-text"></div>
+          <p class="hero-desc">
+            A passionate Full Stack Developer specializing in the MERN stack with hands-on experience building scalable web applications. Currently pursuing MCA at ITER, Bhubaneswar.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary" id="btn-view-projects">
+              <i class="fas fa-rocket"></i> View Projects
+            </a>
+            <a href="cv.html" target="_blank" class="btn btn-secondary" id="btn-view-cv">
+              <i class="fas fa-file-alt"></i> View CV
+            </a>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/Rudra-Narayan-Swain" target="_blank" class="social-icon" title="GitHub" id="social-github">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/rudra80180" target="_blank" class="social-icon" title="LinkedIn" id="social-linkedin">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:rudraswainbot200@gmail.com" class="social-icon" title="Email" id="social-email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="tel:+918018041372" class="social-icon" title="Phone" id="social-phone">
+              <i class="fas fa-phone"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-avatar-wrapper">
+            <div class="hero-avatar">
+              <!-- Replace 'assets/profile.jpg' with your actual photo file -->
+              <img src="assets/profile.jpg" alt="Rudra Narayan Swain" onerror="this.src='assets/profile-placeholder.svg'" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT & EDUCATION ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="text-gradient">About Me</h2>
+        <p>A glimpse into who I am, what drives me, and my academic background.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-text glass-card">
+          <h3>Who am I?</h3>
+          <p>
+            I'm a Full Stack Developer with a strong foundation in the MERN Stack (MongoDB, Express.js, React.js, Node.js). I thrive on building end-to-end web solutions that are both performant and user-friendly.
+          </p>
+          <p>
+            During my internship at <strong>Swadhin IT Solutions</strong>, I gained hands-on experience with REST APIs, Git workflows, and database management. I believe in clean code, continuous learning, and collaborative problem-solving.
+          </p>
+          <p>
+            Beyond coding, I enjoy team leadership, guiding peers, and tackling real-world technical challenges.
+          </p>
+          <div style="display: flex; gap: 1.5rem; margin-top: 1.5rem; flex-wrap: wrap;">
+            <div>
+              <div style="font-size: 1.8rem; font-weight: 800; color: var(--accent-indigo);">3+</div>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">Projects Built</div>
+            </div>
+            <div>
+              <div style="font-size: 1.8rem; font-weight: 800; color: var(--accent-cyan);">6 mo</div>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">Internship</div>
+            </div>
+            <div>
+              <div style="font-size: 1.8rem; font-weight: 800; color: var(--accent-blue);">3+</div>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">Certifications</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 style="font-size: 1.8rem; margin-bottom: 2rem;">Education</h3>
+          <div class="education-timeline">
+            <div class="edu-card">
+              <div class="edu-date">Sept 2024 – June 2026</div>
+              <div class="edu-title">Master in Computer Applications</div>
+              <div class="edu-inst">Institute Of Technical Education And Research, Bhubaneswar, Odisha, India</div>
+              <span class="edu-gpa">GPA: 8.25</span>
+            </div>
+            <div class="edu-card">
+              <div class="edu-date">August 2020 – June 2023</div>
+              <div class="edu-title">Bachelor in Science</div>
+              <div class="edu-inst">Biju Pattnaik Degree College Of Science And Education, Bhubaneswar, Odisha, India</div>
+              <span class="edu-gpa">GPA: 8.62</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section class="section" id="skills" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="text-gradient">Skills & Technologies</h2>
+        <p>A curated overview of the tools and technologies I work with every day.</p>
+      </div>
+      <div class="skills-categories">
+
+        <!-- Languages -->
+        <div class="glass-card skill-category">
+          <h3><i class="fas fa-code"></i> Languages</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Python</span>
+                <span class="skill-percent">88%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">TypeScript</span>
+                <span class="skill-percent">75%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">SQL</span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">PHP</span>
+                <span class="skill-percent">70%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Node.js</span>
+                <span class="skill-percent">82%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="82"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frameworks -->
+        <div class="glass-card skill-category">
+          <h3><i class="fas fa-layer-group"></i> Frameworks</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">React.js</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Django</span>
+                <span class="skill-percent">75%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">React Native</span>
+                <span class="skill-percent">72%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="72"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Express.js</span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="80"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & Platforms -->
+        <div class="glass-card skill-category">
+          <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">MySQL</span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">MongoDB</span>
+                <span class="skill-percent">78%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="78"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Firebase</span>
+                <span class="skill-percent">76%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="76"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Git & GitHub</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="85"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="glass-card skill-category">
+          <h3><i class="fas fa-users"></i> Soft Skills</h3>
+          <div class="soft-skills-grid">
+            <div class="soft-skill-tag">Rapport Building</div>
+            <div class="soft-skill-tag">Problem Solving</div>
+            <div class="soft-skill-tag">Team Leader</div>
+            <div class="soft-skill-tag">Team Management</div>
+            <div class="soft-skill-tag">Communication</div>
+            <div class="soft-skill-tag">Critical Thinking</div>
+            <div class="soft-skill-tag">Adaptability</div>
+            <div class="soft-skill-tag">Time Management</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WORK EXPERIENCE ===== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="text-gradient">Work Experience</h2>
+        <p>My professional journey and the impact I've made along the way.</p>
+      </div>
+      <div class="experience-timeline">
+
+        <div class="exp-item">
+          <div class="exp-dot"></div>
+          <div class="glass-card exp-card">
+            <div class="exp-header">
+              <div>
+                <div class="exp-role">Full Stack Internship (MERN)</div>
+                <div class="exp-company">Swadhin IT Solutions</div>
+              </div>
+              <span class="exp-duration">Aug 2025 – Jan 2026</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Completed a 6-month Full Stack Development Internship at Swadhin IT Solutions, gaining hands-on experience in the <strong>MERN Stack</strong> (MongoDB, Express.js, React.js, Node.js), along with REST APIs, Git, and database management.</li>
+              <li>Developed and maintained responsive web applications, implemented frontend and backend features, integrated databases and APIs, and collaborated with the development team to deliver scalable and user-friendly solutions.</li>
+            </ul>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 1rem;">
+              <span class="badge">MongoDB</span>
+              <span class="badge">Express.js</span>
+              <span class="badge">React.js</span>
+              <span class="badge">Node.js</span>
+              <span class="badge">REST APIs</span>
+              <span class="badge">Git</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-dot"></div>
+          <div class="glass-card exp-card">
+            <div class="exp-header">
+              <div>
+                <div class="exp-role">Technical Assistant</div>
+                <div class="exp-company">Institute Of Technical Education And Research</div>
+              </div>
+              <span class="exp-duration">Feb 2026 – May 2026</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Engaged in various activities done in the lab of college, along with teaching and managing the students.</li>
+              <li>Solved the errors and technical problems faced by students and faculty members.</li>
+            </ul>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 1rem;">
+              <span class="badge">Teaching</span>
+              <span class="badge">Lab Management</span>
+              <span class="badge">Technical Support</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="section" id="projects" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="text-gradient">Projects</h2>
+        <p>A selection of projects that showcase my technical expertise and problem-solving skills.</p>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1: Student AI Helper -->
+        <div class="glass-card project-card" id="project-ai-helper">
+          <div class="project-media-wrapper">
+            <!-- 
+              ===== MEDIA PLACEHOLDER =====
+              To add your project screenshot or video:
+              OPTION A (Image):
+                1. Copy your screenshot into: assets/project-ai-helper.jpg
+                2. The image will load automatically below.
+              OPTION B (Custom click handler):
+                You can also click this area to open a media viewer when you add real media.
+            -->
+            <div class="project-media-placeholder" onclick="openMediaPlaceholder('Student AI Helper', 'Add your project screenshot or demo video to assets/project-ai-helper.jpg or assets/project-ai-helper.mp4')">
+              <i class="fas fa-robot"></i>
+              <span style="font-weight:600; font-size:0.9rem;">Click to Add Media</span>
+              <span style="font-size:0.75rem; margin-top:0.3rem;">Place project image/video in assets/ folder</span>
+            </div>
+            <!-- Uncomment when you have the image:
+            <img src="assets/project-ai-helper.jpg" alt="Student AI Helper" style="width:100%; height:100%; object-fit:cover;" onerror="this.parentElement.querySelector('.project-media-placeholder').style.display='flex'; this.style.display='none';" /> 
+            -->
+            <div class="project-media-overlay">
+              <i class="fas fa-image"></i> Placeholder
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Student AI Helper</h3>
+            <div class="project-tech-tags">
+              <span class="project-tech-tag">React</span>
+              <span class="project-tech-tag">PHP</span>
+              <span class="project-tech-tag">REST API</span>
+              <span class="project-tech-tag">MySQL</span>
+            </div>
+            <p class="project-desc">
+              An AI-powered doubt resolution platform that provides students with instant, contextual answers and code explanations. Implemented secure REST API integration and optimized database queries for faster response time and smooth user experience.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Rudra-Narayan-Swain" target="_blank" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.85rem;">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <!-- <a href="#" target="_blank" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.85rem;">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: ELMS -->
+        <div class="glass-card project-card" id="project-elms">
+          <div class="project-media-wrapper">
+            <!-- 
+              ===== MEDIA PLACEHOLDER =====
+              To add your ELMS project screenshot:
+                1. Copy your screenshot to: assets/project-elms.jpg
+                2. Uncomment the <img> tag below and comment out the placeholder div.
+              For a demo video:
+                1. Copy to: assets/project-elms.mp4
+                2. Use the openVideoModal() function instead.
+            -->
+            <div class="project-media-placeholder" onclick="openMediaPlaceholder('Employee Leave Management System', 'Add your project screenshot to assets/project-elms.jpg')">
+              <i class="fas fa-calendar-check"></i>
+              <span style="font-weight:600; font-size:0.9rem;">Click to Add Media</span>
+              <span style="font-size:0.75rem; margin-top:0.3rem;">Place project image/video in assets/ folder</span>
+            </div>
+            <!-- Uncomment when you have the image:
+            <img src="assets/project-elms.jpg" alt="Employee Leave Management System" style="width:100%; height:100%; object-fit:cover;" /> 
+            -->
+            <div class="project-media-overlay">
+              <i class="fas fa-image"></i> Placeholder
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Employee Leave Management System</h3>
+            <div class="project-tech-tags">
+              <span class="project-tech-tag">React 18</span>
+              <span class="project-tech-tag">Node.js</span>
+              <span class="project-tech-tag">MySQL</span>
+              <span class="project-tech-tag">HTML/CSS</span>
+            </div>
+            <p class="project-desc">
+              A full-stack Employee Leave Management System to handle leave requests, approvals, and balance tracking with role-based access control. Developed responsive dashboards and integrated real-time leave status updates.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Rudra-Narayan-Swain" target="_blank" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.85rem;">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Subtrack -->
+        <div class="glass-card project-card" id="project-subtrack">
+          <div class="project-media-wrapper">
+            <!-- 
+              ===== MEDIA PLACEHOLDER =====
+              To add your Subtrack app screenshot:
+                1. Copy to: assets/project-subtrack.jpg
+                2. Uncomment the <img> tag below.
+            -->
+            <div class="project-media-placeholder" onclick="openMediaPlaceholder('Subtrack – Subscription Tracking Platform', 'Add your project screenshot to assets/project-subtrack.jpg')">
+              <i class="fas fa-mobile-alt"></i>
+              <span style="font-weight:600; font-size:0.9rem;">Click to Add Media</span>
+              <span style="font-size:0.75rem; margin-top:0.3rem;">Place project image/video in assets/ folder</span>
+            </div>
+            <!-- Uncomment when you have the image:
+            <img src="assets/project-subtrack.jpg" alt="Subtrack" style="width:100%; height:100%; object-fit:cover;" /> 
+            -->
+            <div class="project-media-overlay">
+              <i class="fas fa-image"></i> Placeholder
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Subtrack – Subscription Tracking Platform</h3>
+            <div class="project-tech-tags">
+              <span class="project-tech-tag">React Native</span>
+              <span class="project-tech-tag">Expo</span>
+              <span class="project-tech-tag">Firebase</span>
+              <span class="project-tech-tag">TypeScript</span>
+            </div>
+            <p class="project-desc">
+              A subscription tracking platform with a mobile app for managing subscriptions, payments, reminders, and analytics. Built a Firebase-powered backend using Firestore, Authentication, Cloud Functions, Storage, and FCM for real-time updates.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Rudra-Narayan-Swain" target="_blank" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.85rem;">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATES SECTION ===== -->
+  <section class="section" id="certificates">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="text-gradient">Certificates</h2>
+        <p>Professional certifications and completed courses that validate my expertise.</p>
+      </div>
+      <div class="certificates-grid">
+
+        <!-- Certificate 1 -->
+        <div class="glass-card cert-card" id="cert-mern">
+          <div class="cert-header">
+            <div>
+              <div class="cert-title">MERN Full Stack Internship</div>
+              <div class="cert-issuer">Swadhin IT Solutions</div>
+            </div>
+            <span class="cert-year">2025–2026</span>
+          </div>
+          <p class="cert-desc">Completed a 6-month internship in full stack development using MongoDB, Express.js, React.js, and Node.js.</p>
+          <!-- 
+            ===== CERTIFICATE IMAGE PLACEHOLDER =====
+            To add your certificate image:
+              1. Copy your certificate scan to: assets/cert-mern.jpg
+              2. Replace the placeholder div below with:
+                 <img src="assets/cert-mern.jpg" alt="MERN Certificate" style="border-radius:8px; cursor:pointer;" onclick="openImageModal('assets/cert-mern.jpg', 'MERN Full Stack Internship Certificate')" />
+          -->
+          <div class="cert-preview-placeholder" onclick="openCertPlaceholder('MERN Internship Certificate')" title="Add your certificate image">
+            <i class="fas fa-certificate"></i>
+            <span>Click to Add Certificate Image</span>
+            <span style="font-size:0.75rem; margin-top: 0.2rem;">Save as: assets/cert-mern.jpg</span>
+          </div>
+        </div>
+
+        <!-- Certificate 2 -->
+        <div class="glass-card cert-card" id="cert-data-analyst">
+          <div class="cert-header">
+            <div>
+              <div class="cert-title">Introduction to Data Analyst</div>
+              <div class="cert-issuer">Online Course / Institute</div>
+            </div>
+            <span class="cert-year">2026</span>
+          </div>
+          <p class="cert-desc">Learned about the data ecosystem, including the process and data basics in modern analytics workflows.</p>
+          <!-- 
+            ===== CERTIFICATE IMAGE PLACEHOLDER =====
+            Save certificate image as: assets/cert-data-analyst.jpg
+          -->
+          <div class="cert-preview-placeholder" onclick="openCertPlaceholder('Data Analyst Certificate')" title="Add your certificate image">
+            <i class="fas fa-chart-bar"></i>
+            <span>Click to Add Certificate Image</span>
+            <span style="font-size:0.75rem; margin-top: 0.2rem;">Save as: assets/cert-data-analyst.jpg</span>
+          </div>
+        </div>
+
+        <!-- Certificate 3 -->
+        <div class="glass-card cert-card" id="cert-java">
+          <div class="cert-header">
+            <div>
+              <div class="cert-title">Core Java</div>
+              <div class="cert-issuer">Certification Body</div>
+            </div>
+            <span class="cert-year">2023</span>
+          </div>
+          <p class="cert-desc">Certified in Core Java programming with hands-on expertise in OOP, exception handling, collections, and multithreading.</p>
+          <!-- 
+            ===== CERTIFICATE IMAGE PLACEHOLDER =====
+            Save certificate image as: assets/cert-java.jpg
+          -->
+          <div class="cert-preview-placeholder" onclick="openCertPlaceholder('Core Java Certificate')" title="Add your certificate image">
+            <i class="fab fa-java"></i>
+            <span>Click to Add Certificate Image</span>
+            <span style="font-size:0.75rem; margin-top: 0.2rem;">Save as: assets/cert-java.jpg</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section" id="contact" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="text-gradient">Get In Touch</h2>
+        <p>Have a project in mind or want to collaborate? Feel free to reach out!</p>
+      </div>
+      <div class="contact-grid">
+
+        <div>
+          <h3 style="font-size:1.8rem; margin-bottom:2rem;">Let's Talk</h3>
+          <div class="contact-info-list">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-details">
+                <h4>Email</h4>
+                <p><a href="mailto:rudraswainbot200@gmail.com" style="color:var(--text-main);">rudraswainbot200@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div class="contact-details">
+                <h4>Phone</h4>
+                <p><a href="tel:+918018041372" style="color:var(--text-main);">+91 8018041372</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div class="contact-details">
+                <h4>LinkedIn</h4>
+                <p><a href="https://www.linkedin.com/in/rudra80180" target="_blank" style="color:var(--accent-indigo);">linkedin.com/in/rudra80180</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-github"></i></div>
+              <div class="contact-details">
+                <h4>GitHub</h4>
+                <p><a href="https://github.com/Rudra-Narayan-Swain" target="_blank" style="color:var(--accent-indigo);">Rudra-Narayan-Swain</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <h3 style="margin-bottom:1.5rem;">Send a Message</h3>
+          <form class="contact-form" id="contact-form">
+            <div class="form-group-row">
+              <input type="text" class="form-control" id="form-name" placeholder="Your Name" required />
+              <input type="email" class="form-control" id="form-email" placeholder="Your Email" required />
+            </div>
+            <input type="text" class="form-control" id="form-subject" placeholder="Subject" />
+            <textarea class="form-control" id="form-message" placeholder="Your message..." required></textarea>
+            <button type="submit" class="btn btn-primary form-submit-btn" id="btn-send-message">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div class="form-message" id="form-message-status"></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="nav-logo footer-logo">RN<span>S</span></div>
+      <ul class="footer-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="cv.html" target="_blank">View CV</a></li>
+      </ul>
+      <p class="footer-copy">© 2025 Rudra Narayan Swain. Built with ❤️ and code.</p>
+    </div>
+  </footer>
+
+  <!-- ===== LIGHTBOX MODAL ===== -->
+  <div class="modal" id="media-modal">
+    <button class="modal-close" id="modal-close-btn" onclick="closeModal()" aria-label="Close modal">
+      <i class="fas fa-times"></i>
+    </button>
+    <div class="modal-content">
+      <img class="modal-image" id="modal-img" src="" alt="" />
+      <div class="modal-video-wrapper" id="modal-video-wrapper">
+        <video id="modal-video" controls>
+          <source src="" type="video/mp4" />
+        </video>
+      </div>
+      <div class="modal-title" id="modal-title-text"></div>
+      <div class="modal-desc" id="modal-desc-text"></div>
+    </div>
+  </div>
+
+  <!-- Back to top -->
+  <button id="back-to-top" title="Back to top" onclick="window.scrollTo({top:0, behavior:'smooth'})" style="
+    position:fixed; bottom:2rem; right:2rem;
+    width:48px; height:48px; border-radius:50%;
+    background: linear-gradient(135deg, var(--accent-indigo), var(--accent-cyan));
+    border:none; color:white; font-size:1.2rem; cursor:pointer;
+    display:none; align-items:center; justify-content:center;
+    box-shadow: 0 4px 15px rgba(99,102,241,0.4);
+    transition: transform 0.3s ease;
+    z-index:800;">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="index.js"></script>
+</body>
+</html>

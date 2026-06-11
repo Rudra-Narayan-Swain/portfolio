@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV – Rudra Narayan Swain</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    /* ===== SCREEN STYLES ===== */
+    :root {
+      --ink: #0f172a;
+      --ink-muted: #475569;
+      --ink-light: #94a3b8;
+      --accent: #4f46e5;
+      --accent-light: #ede9fe;
+      --divider: #e2e8f0;
+      --bg: #ffffff;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #f1f5f9;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--ink);
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    /* Screen-only controls bar */
+    .cv-actions {
+      max-width: 900px;
+      margin: 0 auto 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .cv-actions h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.1rem;
+      color: #475569;
+      font-weight: 600;
+    }
+
+    .btn-group { display: flex; gap: 0.75rem; }
+
+    .cv-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+
+    .cv-btn-primary {
+      background: #4f46e5;
+      color: white;
+    }
+
+    .cv-btn-primary:hover {
+      background: #4338ca;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(79,70,229,0.3);
+    }
+
+    .cv-btn-secondary {
+      background: white;
+      color: #475569;
+      border: 1px solid #e2e8f0;
+    }
+
+    .cv-btn-secondary:hover {
+      background: #f8fafc;
+    }
+
+    /* ===== CV PAPER ===== */
+    .cv-paper {
+      background: var(--bg);
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem 3.5rem;
+      box-shadow: 0 4px 40px rgba(0,0,0,0.12);
+      border-radius: 8px;
+    }
+
+    /* Header */
+    .cv-header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 2rem;
+      align-items: start;
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 3px solid var(--accent);
+    }
+
+    .cv-name {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.6rem;
+      font-weight: 800;
+      color: var(--ink);
+      letter-spacing: -0.02em;
+      line-height: 1;
+    }
+
+    .cv-title-tag {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-top: 0.4rem;
+    }
+
+    .cv-photo {
+      width: 100px;
+      height: 100px;
+      border-radius: 12px;
+      object-fit: cover;
+      border: 3px solid var(--accent-light);
+    }
+
+    .cv-photo-placeholder {
+      width: 100px;
+      height: 100px;
+      border-radius: 12px;
+      background: var(--accent-light);
+      border: 3px solid var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      color: var(--accent);
+      text-align: center;
+      font-weight: 600;
+      padding: 0.5rem;
+    }
+
+    /* Contact Row */
+    .cv-contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.8rem;
+      margin-top: 0.8rem;
+      font-size: 0.85rem;
+      color: var(--ink-muted);
+    }
+
+    .cv-contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    /* Sections */
+    .cv-section {
+      margin-bottom: 1.8rem;
+    }
+
+    .cv-section-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      border-bottom: 1.5px solid var(--divider);
+      padding-bottom: 0.35rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Education */
+    .edu-item {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1rem;
+      margin-bottom: 0.9rem;
+    }
+
+    .edu-degree {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .edu-inst-cv {
+      font-size: 0.88rem;
+      color: var(--ink-muted);
+      margin-top: 0.1rem;
+    }
+
+    .edu-gpa-cv {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--accent);
+      background: var(--accent-light);
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      height: fit-content;
+    }
+
+    .edu-date-cv {
+      font-size: 0.85rem;
+      color: var(--ink-light);
+      font-weight: 600;
+      white-space: nowrap;
+      text-align: right;
+    }
+
+    .edu-loc {
+      font-size: 0.8rem;
+      color: var(--ink-light);
+      margin-top: 0.1rem;
+    }
+
+    /* Skills */
+    .skills-row {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .skill-row-item {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 1rem;
+      align-items: baseline;
+      font-size: 0.88rem;
+    }
+
+    .skill-row-label {
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .skill-row-value {
+      color: var(--ink-muted);
+    }
+
+    /* Experience */
+    .exp-cv-item {
+      margin-bottom: 1.5rem;
+    }
+
+    .exp-cv-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+    }
+
+    .exp-cv-role {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .exp-cv-company {
+      font-size: 0.88rem;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .exp-cv-date {
+      font-size: 0.85rem;
+      color: var(--ink-light);
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .exp-cv-bullets {
+      list-style: none;
+      margin-top: 0.5rem;
+    }
+
+    .exp-cv-bullets li {
+      position: relative;
+      padding-left: 1.1rem;
+      font-size: 0.88rem;
+      color: var(--ink-muted);
+      margin-bottom: 0.35rem;
+      line-height: 1.5;
+    }
+
+    .exp-cv-bullets li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    /* Projects */
+    .proj-cv-item {
+      margin-bottom: 1.2rem;
+    }
+
+    .proj-cv-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+
+    .proj-cv-name {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .proj-cv-tech {
+      font-size: 0.78rem;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .proj-cv-desc {
+      font-size: 0.86rem;
+      color: var(--ink-muted);
+      margin-top: 0.25rem;
+      line-height: 1.5;
+    }
+
+    /* Certificates */
+    .cert-cv-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.6rem;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+    }
+
+    .cert-cv-left {}
+
+    .cert-cv-name {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .cert-cv-issuer {
+      font-size: 0.8rem;
+      color: var(--ink-muted);
+      margin-top: 0.1rem;
+    }
+
+    .cert-cv-desc {
+      font-size: 0.8rem;
+      color: var(--ink-light);
+      padding-left: 0.8rem;
+      margin-top: 0.15rem;
+    }
+
+    .cert-cv-year {
+      font-size: 0.82rem;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    /* ===== PRINT STYLES ===== */
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .cv-actions { display: none !important; }
+
+      .cv-paper {
+        box-shadow: none;
+        border-radius: 0;
+        padding: 1.5cm 2cm;
+        max-width: 100%;
+      }
+
+      a { color: var(--accent); }
+      a[href]::after { content: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Screen-only action bar -->
+  <div class="cv-actions">
+    <h1>📄 Rudra Narayan Swain — Curriculum Vitae</h1>
+    <div class="btn-group">
+      <a href="index.html" class="cv-btn cv-btn-secondary">← Back to Portfolio</a>
+      <button class="cv-btn cv-btn-primary" onclick="window.print()">
+        🖨️ Download / Print PDF
+      </button>
+    </div>
+  </div>
+
+  <!-- ===== CV PAPER ===== -->
+  <div class="cv-paper">
+
+    <!-- Header -->
+    <div class="cv-header">
+      <div>
+        <div class="cv-name">Rudra Narayan Swain</div>
+        <div class="cv-title-tag">Full Stack Developer · MERN Stack · Python</div>
+        <div class="cv-contact">
+          <span>📧 <a href="mailto:rudraswainbot200@gmail.com">rudraswainbot200@gmail.com</a></span>
+          <span>📱 +91 8018041372</span>
+          <span>🔗 <a href="https://www.linkedin.com/in/rudra80180" target="_blank">linkedin.com/in/rudra80180</a></span>
+          <span>🐙 <a href="https://github.com/Rudra-Narayan-Swain" target="_blank">Rudra-Narayan-Swain</a></span>
+        </div>
+      </div>
+      <!-- Replace with your actual photo: place it at assets/profile.jpg -->
+      <img
+        class="cv-photo"
+        src="assets/profile.jpg"
+        alt="Rudra Narayan Swain"
+        onerror="this.outerHTML='<div class=\'cv-photo-placeholder\'>RNS<br/>Photo</div>'"
+      />
+    </div>
+
+    <!-- Education -->
+    <div class="cv-section">
+      <div class="cv-section-title">Education</div>
+
+      <div class="edu-item">
+        <div>
+          <div class="edu-degree">Master in Computer Applications</div>
+          <div class="edu-inst-cv">Institute Of Technical Education And Research</div>
+          <div class="edu-loc">Bhubaneswar, Odisha, India</div>
+        </div>
+        <div style="text-align:right;">
+          <div class="edu-date-cv">Sept 2024 – June 2026</div>
+          <span class="edu-gpa-cv">GPA: 8.25</span>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div>
+          <div class="edu-degree">Bachelor in Science</div>
+          <div class="edu-inst-cv">Biju Pattnaik Degree College Of Science And Education</div>
+          <div class="edu-loc">Bhubaneswar, Odisha, India</div>
+        </div>
+        <div style="text-align:right;">
+          <div class="edu-date-cv">August 2020 – June 2023</div>
+          <span class="edu-gpa-cv">GPA: 8.62</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="cv-section">
+      <div class="cv-section-title">Skills Summary</div>
+      <div class="skills-row">
+        <div class="skill-row-item">
+          <span class="skill-row-label">Languages</span>
+          <span class="skill-row-value">Python, SQL, PHP, Node.js, JavaScript, TypeScript</span>
+        </div>
+        <div class="skill-row-item">
+          <span class="skill-row-label">Frameworks</span>
+          <span class="skill-row-value">Django, React, React Native, Express.js</span>
+        </div>
+        <div class="skill-row-item">
+          <span class="skill-row-label">Tools</span>
+          <span class="skill-row-value">MySQL, SQLite, Firebase, MongoDB, Git</span>
+        </div>
+        <div class="skill-row-item">
+          <span class="skill-row-label">Platforms</span>
+          <span class="skill-row-value">PyCharm, Jupyter Notebook, Visual Studio Code</span>
+        </div>
+        <div class="skill-row-item">
+          <span class="skill-row-label">Soft Skills</span>
+          <span class="skill-row-value">Rapport Building, Problem Solving, Team Leader, Team Management, Excellent Communication</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Work Experience -->
+    <div class="cv-section">
+      <div class="cv-section-title">Work Experience</div>
+
+      <div class="exp-cv-item">
+        <div class="exp-cv-header">
+          <div>
+            <div class="exp-cv-role">Full Stack Internship (MERN) | Swadhin IT Solutions</div>
+          </div>
+          <span class="exp-cv-date">Aug 2025 – Jan 2026</span>
+        </div>
+        <ul class="exp-cv-bullets">
+          <li>Completed a 6-month Full Stack Development Internship at Swadhin IT Solutions, gaining hands-on experience in the MERN Stack (MongoDB, Express.js, React.js, Node.js), along with REST APIs, Git, and database management.</li>
+          <li>Developed and maintained responsive web applications, implemented frontend and backend features, integrated databases and APIs, and collaborated with the development team to deliver scalable and user-friendly solutions.</li>
+        </ul>
+      </div>
+
+      <div class="exp-cv-item">
+        <div class="exp-cv-header">
+          <div>
+            <div class="exp-cv-role">Technical Assistant | Institute Of Technical Education And Research</div>
+          </div>
+          <span class="exp-cv-date">Feb 2026 – May 2026</span>
+        </div>
+        <ul class="exp-cv-bullets">
+          <li>Engaged in various activities done in the lab of college, along with teaching and managing the students.</li>
+          <li>Solved the errors and technical problems.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="cv-section">
+      <div class="cv-section-title">Projects</div>
+
+      <div class="proj-cv-item">
+        <div class="proj-cv-header">
+          <span class="proj-cv-name">Student AI Helper – AI Powered Doubt Resolution Platform</span>
+          <span class="proj-cv-tech">React · PHP Rest API · MySQL</span>
+        </div>
+        <div class="proj-cv-desc">
+          Built an AI-driven web app that helps students get instant, contextual answers and code explanations.
+          Implemented secure REST API integration and optimized database queries for faster response time and smooth user experience.
+        </div>
+      </div>
+
+      <div class="proj-cv-item">
+        <div class="proj-cv-header">
+          <span class="proj-cv-name">Employee Leave Management System (ELMS)</span>
+          <span class="proj-cv-tech">React 18 · Node.js · MySQL</span>
+        </div>
+        <div class="proj-cv-desc">
+          Full-stack Employee Leave Management System using HTML/CSS, Node.js, and MySQL to handle leave requests, approvals, and balance tracking with role-based access control.
+          Developed responsive dashboards and integrated real-time leave status updates to improve admin and employee workflow efficiency.
+        </div>
+      </div>
+
+      <div class="proj-cv-item">
+        <div class="proj-cv-header">
+          <span class="proj-cv-name">Subtrack – Subscription Tracking Platform</span>
+          <span class="proj-cv-tech">React Native (Expo) · React · Firebase · TypeScript</span>
+        </div>
+        <div class="proj-cv-desc">
+          Built a subscription tracking platform with a mobile app for users and an admin dashboard for managing subscriptions, payments, reminders, and analytics.
+          Developed a Firebase-powered backend using Firestore, Authentication, Cloud Functions, Storage, and FCM for real-time updates and automated notifications.
+        </div>
+      </div>
+    </div>
+
+    <!-- Certificates -->
+    <div class="cv-section">
+      <div class="cv-section-title">Certificates</div>
+
+      <div class="cert-cv-item">
+        <div class="cert-cv-left">
+          <div class="cert-cv-name">MERN Full Stack Internship (Swadhin IT Solutions)</div>
+        </div>
+        <span class="cert-cv-year">2025–2026</span>
+      </div>
+
+      <div class="cert-cv-item">
+        <div class="cert-cv-left">
+          <div class="cert-cv-name">Introduction to Data Analyst</div>
+          <div class="cert-cv-desc">Learned about the data ecosystem, including the process and data basics.</div>
+        </div>
+        <span class="cert-cv-year">2026</span>
+      </div>
+
+      <div class="cert-cv-item">
+        <div class="cert-cv-left">
+          <div class="cert-cv-name">Core Java</div>
+          <div class="cert-cv-desc">Certified in Core Java programming with hands-on expertise in OOP, exception handling, collections, and multithreading.</div>
+        </div>
+        <span class="cert-cv-year">2023</span>
+      </div>
+    </div>
+
+  </div><!-- end .cv-paper -->
+
+</body>
+</html>
